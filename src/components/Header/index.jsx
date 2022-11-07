@@ -2,8 +2,7 @@ import React from 'react';
 import InputAdornment from '@mui/material/InputAdornment';
 import search from '../../images/icons/icon/search.png'
 import notification2 from './../../images/icons/icon/notifications/new.png';
-// import notification2 from './../../images/notification2.png';
-import avatar from './../../images/avatar.png';
+import avatar from './../../images/icons/icon/awatar_img.png';
 import {
   HeaderWrapper,
   MyOutlinedInput,

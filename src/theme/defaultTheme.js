@@ -65,6 +65,7 @@ export default {
         shadow3: "0px 3px 6px rgba(125, 168, 255, 0.16)",
         button_shadow: "-10px -10px 35px #005081, 10px 10px 20px rgba(0, 0, 0, 0.16)",
         hover_card: "-23px -23px 45px #F6F9FF, 18px 18px 50px rgba(13, 39, 80, 0.15)",
-        left_shadow: "0px 4px 40px rgba(189, 205, 255, 0.71)"
+        left_shadow: "0px 4px 40px rgba(189, 205, 255, 0.71)",
+        panel_shadow: "0px 18px 40px #E3EAFF"
     }
 }

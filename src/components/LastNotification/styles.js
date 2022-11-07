@@ -1,12 +1,11 @@
 import styled from 'styled-components'
-import { theme } from './../../theme/theme'
 import IconButton from '@mui/material/IconButton'
-import CloseIcon from '@mui/icons-material/Close';
+import CloseIcon from '@mui/icons-material/Close'
 
 export const NotificationWrapper = styled.div`
     width: 439px;
     background: #FFFFFF;
-    border: 1px solid ${theme.lightBlue1};
+    border: 1px solid ${props => props.theme.color.light_blue};
     padding: 30px;
     position: fixed;
     top: 87px;
@@ -24,7 +23,7 @@ export const NotificationHeader = styled.div`
         font-weight: 700;
         font-size: 16px;
         line-height: 150%;
-        color: ${theme.black}
+        color: ${props => props.theme.color.black}
     }
 `;
 
@@ -35,11 +34,14 @@ export const NotificationBody = styled.div`
 export const NotificationInfor = styled.div`
     width: 100%;
     border-radius: 5px;
-    border: 1px solid  ${props => props.theme.border};
-    background: ${props => props.theme.background};
-    box-shadow: ${theme.shadow3};
+    border: 1px solid  ${props => props.ntheme.border};
+    background: ${props => props.ntheme.bg};
+    box-shadow: ${props => props.theme.shadow3};
     padding: 14px 18px 16px 19px;
     margin-bottom: 15px;
+    :hover: {
+
+    }
 `;
 
 export const NotificationInforTop = styled.div`
@@ -59,7 +61,7 @@ export const NotificationInforTop = styled.div`
         font-weight: 400;
         font-size: 12px;
         line-height: 150%;
-        color: ${theme.black}
+        color: ${props => props.theme.black}
     }
 `;
 
@@ -83,7 +85,7 @@ export const MyIconButton = styled(IconButton)`
 export const MyCloseIcon = styled(CloseIcon)`
     width: 15px;
     height: 15px;
-    color: ${theme.grey}
+    color: ${props => props.theme.grey}
 `;
 
 export const NotificationStatusWrapper = styled.div`
@@ -92,6 +94,6 @@ export const NotificationStatusWrapper = styled.div`
     justify-content: center;
     span{
        padding-left: 6px;
-       color: ${props => props.theme.border}
+       color: ${props => props.ntheme.color || props.theme.border}
     }
 `;
