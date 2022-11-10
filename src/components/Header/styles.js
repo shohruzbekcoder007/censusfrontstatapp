@@ -82,7 +82,7 @@ export const HeaderPersonnelText = styled.div`
     p{
         font-style: normal;
         font-weight: 600;
-        font-size: 14px;
+        font-size: 1.75em;
         line-height: 20px;
         letter-spacing: 0.2px;
     }
@@ -90,7 +90,7 @@ export const HeaderPersonnelText = styled.div`
         display: inline-block;
         font-style: normal;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 1.5em;
         line-height: 20px;
         letter-spacing: 0.2px;
         margin-top: -2px;

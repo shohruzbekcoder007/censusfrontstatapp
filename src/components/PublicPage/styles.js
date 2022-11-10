@@ -10,6 +10,7 @@ export const PublicPageWrapper = styled.div`
     background-image: url(${flag});
     background-position: 0 0;
     background-repeat: no-repeat;
+    font-size: 8px;
     @media (max-width: 1920px) {
         width: 100%;
         padding: 0 15px;

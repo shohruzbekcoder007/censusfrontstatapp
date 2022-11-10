@@ -26,6 +26,6 @@ export const HeaderSettingsText = styled.span`
     padding-left: 15px;
     color: ${props => props.theme.color.main_color};
     font-weight: 700;
-    font-size: 16px;
+    font-size: 2em;
     line-height: 150%;
 `;

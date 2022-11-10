@@ -38,7 +38,7 @@ export const ActiveLink = styled(Link)`
     border-radius: 5px 0px 0px 5px;
     padding: 13px 0;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 2em;
     line-height: 24px;
     text-decoration: none;
     color: ${props => props.theme.color.main_color};
@@ -61,7 +61,7 @@ export const UnActiveLink = styled(Link)`
     width: 100%;
     padding: 13px 0;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 2em;
     line-height: 24px;
     text-decoration: none;
     color: ${props => props.theme.color.main_color};

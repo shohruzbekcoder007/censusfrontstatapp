@@ -7,7 +7,7 @@ export const Tab = styled(TabUnstyled)`
   cursor: pointer;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 2em;
   line-height: 25px;
   background-color: transparent;
   width: 100%;

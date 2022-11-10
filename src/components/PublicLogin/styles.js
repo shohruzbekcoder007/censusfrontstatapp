@@ -15,7 +15,7 @@ export const PublicLoginParagraph = styled.p`
     font-style: ${props => props.theme.text.font_style};
     line-height: ${props => props.theme.text.line_height};
     font-weight: 400;
-    font-size: 24px;
+    font-size: 3em;
     margin-top: 7px;
     margin-bottom: 21px;
 `;

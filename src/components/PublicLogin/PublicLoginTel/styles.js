@@ -5,7 +5,7 @@ export const EnterButton = styled(Button)(() => (
     {
         fontStyle: "normal",
         fontWeight: "800",
-        fontSize: "16px",
+        fontSize: "2em",
         lineHeight: "25px",
         borderRadius: "10px",
         color: "#fff",
@@ -14,6 +14,7 @@ export const EnterButton = styled(Button)(() => (
         width: "100%",
         padding: "17px",
         marginTop: "22px",
-        marginBottom: "21px"
+        marginBottom: "21px",
+        fontFamily: 'Averta CY'
     }
 ));

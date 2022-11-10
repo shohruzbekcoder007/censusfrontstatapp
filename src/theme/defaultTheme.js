@@ -21,42 +21,43 @@ const defaultTheme = {
         progress: "linear-gradient(90deg, #E50000 0%, #F37A50 20.31%, #7F99EB 65.1%, #03FF0D 100%)"
     },
     text: {
+        main_font_size: "8px",
         color: "#C4C4C4",
         font_family: 'Averta CY',
         font_style: "normal",
         line_height: "150%",
         heading1: {
             font_weight: "900",
-            font_size: "36px",
+            font_size: "4em",
             text_transform: "uppercase",
         },
         heading2: {
             font_weight: 700,
-            font_size: "24px",
+            font_size: "3em",
         },
         paragraph: {
             font_weight: 400,
-            font_size: "16px",
+            font_size: "2em",
         },
         big_text: {
             font_weight: 400,
-            font_size: "18px",
+            font_size: "2.25em",
         },
         caption: {
             font_weight: 700,
-            font_size: "16px",
+            font_size: "2em",
         },
         heading3: {
             font_weight: 700,
-            font_size: "18px",
+            font_size: "2.25em",
         },
         small_text: {
             font_weight: 400,
-            font_size: "14px",
+            font_size: "1.75em",
         },
         small_text_caption: {
             font_weight: 700,
-            font_size: "14px",
+            font_size: "1.75em",
         }
     },
     effect: {

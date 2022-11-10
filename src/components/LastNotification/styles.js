@@ -21,7 +21,7 @@ export const NotificationHeader = styled.div`
     h4 { 
         font-style: normal;
         font-weight: 700;
-        font-size: 16px;
+        font-size: 2em;
         line-height: 150%;
         color: ${props => props.theme.color.black}
     }
@@ -52,14 +52,14 @@ export const NotificationInforTop = styled.div`
     h5{
         font-style: normal;
         font-weight: 700;
-        font-size: 16px;
+        font-size: 2em;
         line-height: 150%;
         color: #1B253A;
     }
     span{
         font-style: normal;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 2em;
         line-height: 150%;
         color: ${props => props.theme.black}
     }
@@ -72,7 +72,7 @@ export const NotificationInforBottom = styled.div`
     span{
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 2em;
         line-height: 150%;
         color: #BCBFD8;
     }
