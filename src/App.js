@@ -9,25 +9,39 @@ import {
 import Panel from './components/Panel'
 import { ThemeProvider  } from 'styled-components'
 import { QueryClient, QueryClientProvider} from 'react-query'
+import PublicPage from "./components/PublicPage"
+import PublicLogin from "./components/PublicLogin"
+import { ThemeProvider as MuiTheme } from '@mui/material/styles'
+import muiTheme from './theme/muiTheme'
+import CustomizedAccordions from "./components/CustomizedAccordions";
 
 const queryClient = new QueryClient()
 
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
-        <ThemeProvider theme={defaultTheme}>
-            <Routes>
-                <Route path="/" element={<ResponsiveDrawer/>}>
+    <MuiTheme theme={muiTheme}>
+      <QueryClientProvider client={queryClient}>
+        <BrowserRouter>
+          <ThemeProvider theme={defaultTheme}>
+              <Routes>
+                  <Route path="/" element={<ResponsiveDrawer/>}>
                     <Route index element={<Panel/>}/>
                     <Route path="surovnoma" element={<p>salom2</p>} />
                     <Route path="sozlamalar" element={<p>salom3</p>} />
-                </Route>
-            </Routes>
-        </ThemeProvider>
-      </BrowserRouter>
-    </QueryClientProvider>
-    
+                  </Route>
+                  <Route path="/public" element={<PublicPage/>}>
+                    <Route index element={<PublicLogin/>}/>
+                    <Route path="about" element={<CustomizedAccordions/>} />
+                    <Route path="request" element={<p>salom2</p>} />
+                    <Route path="agreement" element={<p>salom3</p>} />
+                    <Route path="faq" element={<p>salom4</p>} />
+                    <Route path="contact" element={<p>salom5</p>} />
+                  </Route>
+              </Routes>
+          </ThemeProvider>
+        </BrowserRouter>
+      </QueryClientProvider>
+    </MuiTheme>
   );
 }
 

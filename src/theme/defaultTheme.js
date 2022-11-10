@@ -1,4 +1,4 @@
-export default {
+const defaultTheme = {
     color: {
         black: "#002A44",
         blue: "#4364CC",
@@ -69,3 +69,5 @@ export default {
         panel_shadow: "0px 18px 40px #E3EAFF"
     }
 }
+
+export default defaultTheme
