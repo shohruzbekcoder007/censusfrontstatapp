@@ -27,8 +27,8 @@ const defaultTheme = {
         font_style: "normal",
         line_height: "150%",
         heading1: {
-            font_weight: "900",
-            font_size: "4em",
+            font_weight: 900,
+            font_size: "4.5em",
             text_transform: "uppercase",
         },
         heading2: {

@@ -3,7 +3,7 @@ import { Heading } from './styles'
 import { useContext } from 'react'
 import { ThemeContext } from 'styled-components'
 
-export default function Heading1({ children, color, size }) {
+export default function Heading2({ children, color, size }) {
 
     const themeContext = useContext(ThemeContext)
 
