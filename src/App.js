@@ -1,11 +1,7 @@
 import React from "react"
 import defaultTheme from './theme/defaultTheme'
 import ResponsiveDrawer from './components/Main'
-import {
-  BrowserRouter,
-  Routes,
-  Route
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Panel from './components/Panel'
 import { ThemeProvider  } from 'styled-components'
 import { QueryClient, QueryClientProvider} from 'react-query'
@@ -13,7 +9,11 @@ import PublicPage from "./components/PublicPage"
 import PublicLogin from "./components/PublicLogin"
 import { ThemeProvider as MuiTheme } from '@mui/material/styles'
 import muiTheme from './theme/muiTheme'
-import CustomizedAccordions from "./components/CustomizedAccordions";
+import PublicAbout from "./components/PublicAbout"
+import PublicRequest from "./components/PublicRequest"
+import PublicAgreement from "./components/PublicAgreement"
+import PublicFaq from "./components/PublicFaq"
+import PublicContact from "./components/PublicContact"
 
 const queryClient = new QueryClient()
 
@@ -31,11 +31,11 @@ function App() {
                   </Route>
                   <Route path="/public" element={<PublicPage/>}>
                     <Route index element={<PublicLogin/>}/>
-                    <Route path="about" element={<CustomizedAccordions/>} />
-                    <Route path="request" element={<p>salom2</p>} />
-                    <Route path="agreement" element={<p>salom3</p>} />
-                    <Route path="faq" element={<p>salom4</p>} />
-                    <Route path="contact" element={<p>salom5</p>} />
+                    <Route path="about" element={<PublicAbout/>} />
+                    <Route path="request" element={<PublicRequest/>} />
+                    <Route path="agreement" element={<PublicAgreement/>} />
+                    <Route path="faq" element={<PublicFaq/>} />
+                    <Route path="contact" element={<PublicContact/>} />
                   </Route>
               </Routes>
           </ThemeProvider>

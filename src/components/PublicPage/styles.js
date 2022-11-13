@@ -16,7 +16,3 @@ export const PublicPageWrapper = styled.div`
         /* padding: 0 15px; */
       }
 `
-
-export const PublicPageTitle = styled.div`
-  padding: 38px 0;
-`
