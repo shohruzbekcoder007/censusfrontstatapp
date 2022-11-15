@@ -17,7 +17,7 @@ export const PublicAgreementFaqBox = styled.div`
     align-self: stretch;
     transition: all .3s;
     :hover {
-        box-shadow: ${props =>  props.theme.effect.shadow};;
+        box-shadow: ${props =>  props.theme.effect.shadow};
     }
 `
 

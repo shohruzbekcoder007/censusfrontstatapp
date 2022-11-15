@@ -12,7 +12,7 @@ export const HeaderContainer = styled.div`
 `;
 
 export const HeaderWrapper = styled.div`
-    padding-left: 329px;
+    padding-left: ${props =>  props.big?"320px":"120px"};
     position: fixed;
     top: 0;
     right: 0;

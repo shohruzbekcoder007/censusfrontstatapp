@@ -3,7 +3,6 @@ import { styled } from '@mui/material/styles';
 import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
 import bx_plus from '../../images/icons/icon/bx_plus.png'
 import bx_minus from '../../images/icons/icon/bx_minus.png'
 import { AccordionBodyText, AccordionTitle, AccordionTitleImg, AccordionWrapper } from './styles';

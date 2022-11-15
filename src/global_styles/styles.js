@@ -10,7 +10,7 @@ export const MainWrapperAllPages = styled.div`
     font-size: 8px;
     @media (max-width: 1920px) {
         width: 100%;
-        padding: 0 15px;
+        /* padding: 0 15px; */
     }
 `;
 

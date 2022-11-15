@@ -10,7 +10,7 @@ export const SidebarWrapper = styled(Box)`
     box-shadow: ${props => props.theme.effect.left_shadow};
     border: none;
     height: 100vh;
-    min-width: 329px;
+    width: 120px;
     display: block;
     padding-top: 60px;
     z-index: 2;
@@ -20,11 +20,14 @@ export const SidebarWrapper = styled(Box)`
 export const SidebarLogo = styled.div`
     width: 100%;
     text-align: center;
+    img{
+        width: 93px;
+    }
 `;
 
 export const SidebarMenu = styled.ul`
     padding-top: 47px;
-    padding-left: 83px;
+    padding-left: 5px;
 `;
 
 export const SidebarMenuItem = styled.li`
@@ -42,13 +45,16 @@ export const ActiveLink = styled(Link)`
     line-height: 24px;
     text-decoration: none;
     color: ${props => props.theme.color.main_color};
-    padding-left: 14px;
+    /* padding-left: 14px; */
     position: relative;
+    text-align: center;
     svg {
         display: inline-block;
         margin-right: 10px;
-        /* margin-top: 10px; */
         transform: translateY(1px);
+    }
+    span {
+        display: block;
     }
     ::before{
         content: "";
@@ -56,7 +62,7 @@ export const ActiveLink = styled(Link)`
         top: 0;
         left: 0;
         width: 3px;
-        height: 50px;
+        height: 100%;
         background-color: ${props => props.theme.color.main_color};
         border-radius: 5px 0px 0px 5px;
     }
@@ -71,11 +77,14 @@ export const UnActiveLink = styled(Link)`
     line-height: 24px;
     text-decoration: none;
     color: ${props => props.theme.color.main_color};
-    padding-left: 14px;
+    /* padding-left: 14px; */
+    text-align: center;
     svg {
         display: inline-block;
         margin-right: 10px;
-        /* margin-top: 10px; */
         transform: translateY(1px);
+    }
+    span {
+        display: block;
     }
 `;

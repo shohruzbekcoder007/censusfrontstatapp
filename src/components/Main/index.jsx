@@ -8,18 +8,24 @@ import Header from '../Header';
 // import LastNotification from '../LastNotification';
 import { MainWrapper } from './styles';
 import { MainWrapperAllPages } from '../../global_styles/styles';
+import SidebarMini from '../SidebarMini';
 
 function ResponsiveDrawer(props) {
+
+  const [big, setBig] = React.useState(false)
+
   return (
     <MainWrapperAllPages>
       <Box sx={{ display: 'flex'}}>
         <CssBaseline />
-        <Sidebar/>
+        {
+          big?<Sidebar/>:<SidebarMini/>
+        }
         <Box
           component="main"
-          sx={{ width: '100%', marginLeft: '329px'}}
+          sx={big?{ width: '100%', marginLeft: '329px'}:{ width: '100%', marginLeft: '120px'}}
         >
-          <Header/>
+          <Header big={big}/>
           <MainWrapper takeViewportHeight>
             <Outlet/>
             {/* <LastNotification/> */}

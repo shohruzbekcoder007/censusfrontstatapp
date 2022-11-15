@@ -1,11 +1,11 @@
 import React from 'react';
-import InputAdornment from '@mui/material/InputAdornment';
-import search from '../../images/icons/icon/search.png'
+// import InputAdornment from '@mui/material/InputAdornment';
+// import search from '../../images/icons/icon/search.png'
 import notification2 from './../../images/icons/icon/notifications/new.png';
 import avatar from './../../images/icons/icon/awatar_img.png';
 import {
   HeaderWrapper,
-  MyOutlinedInput,
+  // MyOutlinedInput,
   HeaderRight,
   HeaderNotification,
   HeaderPersonnel,
@@ -16,13 +16,13 @@ import {
 import HeaderSettings from '../HeaderSettings';
 
 
-export default function Header() {
+export default function Header({big}) {
 
 
   return (
     <HeaderWrapper>
       <HeaderContainer>
-        <MyOutlinedInput
+        {/* <MyOutlinedInput
           id="outlined-adornment-weight"
           endAdornment={<InputAdornment position="end">
             <img src={search} alt="search"/>
@@ -33,7 +33,8 @@ export default function Header() {
           inputProps={{
             'aria-label': 'weight',
           }}
-        />
+        /> */}
+        <div></div>
         <HeaderRight>
           <HeaderSettings/>
           <HeaderNotification>
