@@ -2,7 +2,7 @@ import React from 'react'
 import Box from '@mui/material/Box'
 import { useContext } from 'react'
 import { ThemeContext } from 'styled-components'
-import Heading2 from '../../../helper_components/Heading2'
+import Heading2 from '../../helper_components/Heading2'
 
 export default function QuestionnaireTop() {
     const themeContext = useContext(ThemeContext)
@@ -33,12 +33,13 @@ export default function QuestionnaireTop() {
             <Box
                 sx={{
                     width: "50%",
-                    width: "438px",
+                    // width: "438px",
                     position: "relative",
-                    display: "inherit"
+                    display: "inherit",
+                    alignSelf: "end"
                 }}
             >
-                <img src={require('../../../images/surovnoma_odamlar.png')} alt="registrator list" />
+                <img src={require('../../images/surovnoma_odamlar.png')} alt="registrator list" />
             </Box>
         </Box>
   )
