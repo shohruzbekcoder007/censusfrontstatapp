@@ -36,6 +36,7 @@ export default function QuestionnaireTop() {
                     // width: "438px",
                     position: "relative",
                     display: "inherit",
+                    paddingLeft: "60px",
                     alignSelf: "end"
                 }}
             >

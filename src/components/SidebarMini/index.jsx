@@ -23,8 +23,7 @@ function CustomLink({ children, to, ...props }) {
     }
 }
 
-export default function SidebarMini() {
-
+export default React.memo(function SidebarMini() {
     return (
         <SidebarWrapper
             component="nav"
@@ -57,4 +56,4 @@ export default function SidebarMini() {
             </SidebarMenu>
         </SidebarWrapper>
     )
-}
+})

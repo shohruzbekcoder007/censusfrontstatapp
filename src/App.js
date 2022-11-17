@@ -16,6 +16,9 @@ import PublicFaq from "./components/PublicFaq"
 import PublicContact from "./components/PublicContact"
 import Questionnaire from "./components/Questionnaire";
 import QuestionnaireTabOne from "./components/QuestionnaireTabOne";
+import QuestionnaireTabTwo from "./components/QuestionnaireTabTwo";
+import QuestionnaireTabThree from "./components/QuestionnaireTabThree";
+import QuestionnaireTabFour from "./components/QuestionnaireTabFour";
 
 const queryClient = new QueryClient()
 
@@ -30,6 +33,9 @@ function App() {
                     <Route index element={<Panel/>}/>
                     <Route path="surovnoma" element={<Questionnaire/>}>
                       <Route index element={<QuestionnaireTabOne/>}/>
+                      <Route path="questiontype" element={<QuestionnaireTabTwo/>}/>
+                      <Route path="questionreport" element={<QuestionnaireTabThree/>}/>
+                      <Route path="questionfinal" element={<QuestionnaireTabFour/>}/>
                     </Route>
                     <Route path="sozlamalar" element={<p>salom3</p>} />
                   </Route>
